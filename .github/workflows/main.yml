@@ -6,10 +6,9 @@ jobs:
 
     runs-on: ${{matrix.os}}
     strategy:
-        max-parallel: 3
         matrix:
           os: [macos-latest, windows-latest, ubuntu-latest]
-          java: [8, 11, 17]
+          java: [10, 12, 14]
     steps:
     - uses: actions/checkout@v2
 
