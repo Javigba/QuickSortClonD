@@ -8,7 +8,7 @@ jobs:
     strategy:
         matrix:
           os: [macos-latest, windows-latest, ubuntu-latest]
-          java: [10, 12, 14]
+          java: [12, 14]
     steps:
     - uses: actions/checkout@v2
 
