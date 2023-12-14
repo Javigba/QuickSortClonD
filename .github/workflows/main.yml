@@ -6,7 +6,8 @@ jobs:
 
     runs-on: ${{matrix.os}}
     strategy:
-      matrix:
+        max-parallel: 3
+        matrix:
           os: [macos-latest, windows-latest, ubuntu-latest]
           java: [8, 11, 17]
     steps:
